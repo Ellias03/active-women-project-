@@ -4,111 +4,121 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>EmpowerHer Project</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    /* Hero Section */
-    header {
-      position: relative;
-      height: 400px;
-      background: url('activites.jpg') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 3em;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-      margin: 0;
-    }
-
-    /* Main Content */
-    {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    main h2 {
-      color: #6200ea;
-      margin-bottom: 10px;
-    }
-
-    .mission {
-      font-size: 1.2em;
-      line-height: 1.6;
-      margin-bottom: 40px;
-    }
-
-    /* Navigation Grid */
-    .nav-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
-    }
-
-    .nav-grid a {
-      display: block;
-      padding: 20px;
-      background-color: #e0d7f5;
-      text-align: center;
-      text-decoration: none;
-      color: #6200ea;
-      font-weight: bold;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-    }
-
-    .nav-grid a:hover {
-      background-color: #d1c4e9;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #6200ea;
-      color: white;
-      margin-top: 40px;
-    }
-
-    /* Responsive Text */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2em;
+  <!-- Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Configure Tailwind to use Inter font and define custom colors based on the theme -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            'empower-primary': '#6200ea', // Deep Purple
+            'empower-light': '#e0d7f5',  // Light Lavender
+            'empower-dark': '#4a00ac',   // Darker Purple
+          }
+        },
       }
+    }
+  </script>
+  <!-- Custom style for the background image fallback -->
+  <style>
+    /* Ensures the custom font is used */
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Set the hero background image using a placeholder matching the theme */
+    .hero-background {
+      background-image: url('https://placehold.co/1200x400/6200EA/FFFFFF?text=EmpowerHer+Sports+and+Fitness');
+      /* Fallback/Local image: url('activities.jpg') center/cover no-repeat; */
     }
   </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800 min-h-screen">
 
-<header>
-  <h1>EmpowerHer Project</h1>
+<!-- Header / Hero Section -->
+<header class="hero-background relative h-96 flex flex-col items-center justify-center text-white text-center bg-cover bg-center shadow-2xl">
+  <!-- Overlay for better text readability -->
+  <div class="absolute inset-0 bg-black opacity-40"></div>
+  <div class="relative z-10 p-4">
+    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight drop-shadow-xl animate-pulse">
+      EmpowerHer Project
+    </h1>
+    <p class="text-xl mt-2 italic font-light">
+      Inclusion. Strength. Community.
+    </p>
+  </div>
 </header>
 
-<main>
-  <h2>Our Mission</h2>
-  <p class="mission">
-    The EmpowerHer initiative is dedicated to increasing female participation in sports and physical activities by creating inclusive, supportive, and enjoyable environments. We aim to break down barriers and empower women and girls to engage confidently in multi-activity programs tailored to their needs.
-  </p>
+<!-- Main Content Area -->
+<main class="max-w-6xl mx-auto p-4 md:p-8">
 
-  <div class="nav-grid">
-    <a href="costings.html">Costingstivities.htmlActivities</a>
-    <a href="policiescies</a>
-    <a href="social-theory.html">Social Theory</amentation-plan.htmlImplementation Plan</a>
-    <a href="evaluation.html">Evaluationv>
+  <!-- Mission Section -->
+  <section class="mb-12">
+    <h2 class="text-3xl font-bold text-empower-primary mb-6 border-b-2 border-empower-light pb-2">
+      Our Mission
+    </h2>
+    <p class="text-lg text-gray-600 leading-relaxed italic">
+      The EmpowerHer initiative is dedicated to increasing female participation in sports and physical activities by creating inclusive, supportive, and enjoyable environments. We aim to break down barriers and empower women and girls of all body types and ethnicities to engage confidently in multi-activity programs tailored to their needs.
+    </p>
+  </section>
+
+  <!-- Navigation Grid (Key Areas) -->
+  <section>
+    <h2 class="text-3xl font-bold text-empower-primary mb-6 border-b-2 border-empower-light pb-2">
+      Project Focus Areas
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      
+      <!-- Card 1: Activities & Costings -->
+      <a href="activities.html" class="block p-6 bg-empower-light text-empower-dark font-semibold rounded-xl shadow-lg hover:bg-purple-200 transition duration-300 transform hover:scale-105 text-xl text-center border-b-4 border-empower-primary">
+        <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+        Activities & Costings
+      </a>
+
+      <!-- Card 2: Policies -->
+      <a href="policies.html" class="block p-6 bg-empower-light text-empower-dark font-semibold rounded-xl shadow-lg hover:bg-purple-200 transition duration-300 transform hover:scale-105 text-xl text-center border-b-4 border-empower-primary">
+        <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+        Inclusion Policies
+      </a>
+
+      <!-- Card 3: Social Theory -->
+      <a href="social-theory.html" class="block p-6 bg-empower-light text-empower-dark font-semibold rounded-xl shadow-lg hover:bg-purple-200 transition duration-300 transform hover:scale-105 text-xl text-center border-b-4 border-empower-primary">
+        <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18s-3.332.477-4.5 1.253"></path></svg>
+        Theoretical Frameworks
+      </a>
+
+      <!-- Card 4: Implementation Plan -->
+      <a href="implementation-plan.html" class="block p-6 bg-empower-light text-empower-dark font-semibold rounded-xl shadow-lg hover:bg-purple-200 transition duration-300 transform hover:scale-105 text-xl text-center border-b-4 border-empower-primary">
+        <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+        Implementation Plan
+      </a>
+      
+      <!-- Card 5: Evaluation -->
+      <a href="evaluation.html" class="block p-6 bg-empower-light text-empower-dark font-semibold rounded-xl shadow-lg hover:bg-purple-200 transition duration-300 transform hover:scale-105 text-xl text-center border-b-4 border-empower-primary">
+        <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+        Evaluation Metrics
+      </a>
+
+      <!-- Added Card 6: Contact/Get Involved -->
+      <a href="contact.html" class="block p-6 bg-empower-primary text-white font-semibold rounded-xl shadow-lg hover:bg-empower-dark transition duration-300 transform hover:scale-105 text-xl text-center border-b-4 border-white">
+        <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5m-5 0a2 2 0 100-4m0 4a2 2 0 01-2-2V7a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2H5m3-2l4 4m4-4l4 4"></path></svg>
+        Get Involved
+      </a>
+
+    </div>
+  </section>
+
 </main>
 
-<footer>
-  &copy; 2025 EmpowerHer Project. All rights reserved.
+<!-- Footer -->
+<footer class="text-center p-6 bg-empower-dark text-white mt-10 shadow-inner">
+  <div class="max-w-6xl mx-auto">
+    <p>&copy; 2025 EmpowerHer Project. All rights reserved.</p>
+    <p class="text-xs mt-1 opacity-70">A global initiative for women's fitness and well-being.</p>
+  </div>
 </footer>
 
 </body>
