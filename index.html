@@ -12,21 +12,25 @@
       color: #333;
     }
 
+    /* Hero Section */
     header {
-      background: url('https://via.placeholder.com/1200x400?text=EmpowerHer+Activities') center/cover no-repeat;
+      position: relative;
       height: 400px;
+      background: url('activites.jpg') center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+      text-align: center;
     }
 
     header h1 {
       font-size: 3em;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
       margin: 0;
     }
 
+    /* Main Content */
     main {
       padding: 40px 20px;
       max-width: 1000px;
@@ -44,19 +48,12 @@
       margin-bottom: 40px;
     }
 
+    /* Navigation Grid */
     .nav-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 20px;
     }
-
-    
-<header style="position: relative; text-align: center; color: white;">
-  <img src="images/activities.jpg" alt="Women participating in various sports activities" style="width: 100%; height: auto; displayt-shadow: 2px 2px 6px rgba(0,0,0,0.7);">
-    EmpowerHer Project
-  </h1>
-</header>
-
 
     .nav-grid a {
       display: block;
@@ -74,12 +71,20 @@
       background-color: #d1c4e9;
     }
 
+    /* Footer */
     footer {
       text-align: center;
       padding: 20px;
       background-color: #6200ea;
       color: white;
       margin-top: 40px;
+    }
+
+    /* Responsive Text */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
     }
   </style>
 </head>
@@ -96,12 +101,9 @@
   </p>
 
   <div class="nav-grid">
-    <a href="costings.html/a>
-    <a href="activities.html">/a>
-    <a href="policies.html/a>
-    <a href="social-theocial Theory</a>
-    <a href="implementation-plan.html">Implementation Plan</aef="n.htmlEvaluation</a>
-  </div>
+    <a href="costings.html">Cost  <a href="activities.html">/a>
+    <a href="htmlPolicies</a>
+    <a href="social-theory.html">Social Theory</ref="implementation-plan.html">Implementation   <a href="evaluation.html">Evaluation</
 </main>
 
 <footer>
