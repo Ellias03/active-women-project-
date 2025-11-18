@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<div class="relative z-10 p-4">
-  <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight drop-shadow-xl leading-tight md:leading-tight animate-pulse">
-    EmpowerHer Project
-  </h1>
-  <p class="text-xl md:text-2xl mt-4 md:mt-6 italic font-light">
-    Inclusion. Strength. Community.
-  </p>
-</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EmpowerHer Project</title>
+  <!-- Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Configure Tailwind to use Inter font and define custom colors based on the theme -->
+  <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -43,10 +43,10 @@
   <!-- Overlay for better text readability -->
   <div class="absolute inset-0 bg-black opacity-40"></div>
   <div class="relative z-10 p-4">
-    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight drop-shadow-xl animate-pulse">
+    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight drop-shadow-xl leading-tight md:leading-tight animate-pulse">
       EmpowerHer Project
     </h1>
-    <p class="text-xl mt-2 italic font-light">
+    <p class="text-xl md:text-2xl mt-4 md:mt-6 italic font-light">
       Inclusion. Strength. Community.
     </p>
   </div>
