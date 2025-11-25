@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Evaluation Metrics - Empowering Sport</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { inter: ['Inter', 'sans-serif'] },
+          colors: {
+            'empower-primary': '#6200ea',
+            'empower-light': '#e0d7f5',
+            'empower-dark': '#4a00ac',
+          }
+        },
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    /* Hero image placeholder */
+    .hero-bg {
+      background-image: url('https://placehold.co/1200x400/6200EA/FFFFFF?text=Evaluation+and+Impact+Measurement');
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+
+  <header class="hero-bg h-64 flex items-center justify-center bg-cover bg-center text-white shadow-lg relative">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="relative z-10 text-center px-4">
+      <h1 class="text-4xl md:text-6xl font-bold">Evaluation Metrics</h1>
+      <p class="mt-2 text-lg md:text-xl font-light">Measuring success, impact, and sustainability.</p>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-5xl mx-auto p-6 md:p-10 w-full">
+    
+    <div class="mb-8">
+      <a href="index.html" class="text-empower-primary hover:text-empower-dark font-semibold inline-flex items-center transition-colors">
+        &larr; Back to Dashboard
+      </a>
+    </div>
+
+    <div class="bg-white rounded-xl shadow p-8 mb-10 border-b-4 border-empower-primary">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">Our Approach to Success</h2>
+      <p class="text-lg leading-relaxed text-gray-700">
+        To ensure the Empowering Sport and Fitness initiative delivers real value, we utilize a **Mixed-Methods Evaluation Framework**. We don't just count heads; we measure behavioral change, psychological well-being, and community cohesion to understand the "why" behind the numbers.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 mb-16">
+      
+      <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-empower-dark">
+        <div class="flex items-center mb-4">
+          <div class="bg-empower-light p-3 rounded-full text-empower-dark mr-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800">Quantitative (The Data)</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Focuses on objective, measurable data points tracked directly through our registration systems.</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 space-y-2 font-medium">
+          <li>Attendance & retention rates against targets.</li>
+          <li>Demographic intake (ensuring diversity goals are met).</li>
+          <li>Pre- and Post-program validated surveys (e.g., Warwick-Edinburgh Mental Well-being Scale).</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-empower-primary">
+        <div class="flex items-center mb-4">
+          <div class="bg-empower-light p-3 rounded-full text-empower-dark mr-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800">Qualitative (The Experience)</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Focuses on human experience, connecting back to our theoretical frameworks of autonomy and relatedness.</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 space-y-2 font-medium">
+          <li>Semi-structured focus groups at mid-point.</li>
+          <li>One-on-one exit interviews with participants and coaches.</li>
+          <li>Observation logs recording social interactions and confidence building.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="text-3xl font-bold text-empower-primary mb-8 text-center">Year 1 Key Performance Indicators (KPIs)</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+      
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center border-t-8 border-empower-light">
+        <h4 class="text-gray-500 uppercase text-sm font-bold mb-2">Total Reach Goal</h4>
+        <div class="text-5xl font-extrabold text-empower-primary mb-2">150</div>
+        <p class="text-gray-700 font-medium">Unique female participants registered.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center border-t-8 border-empower-dark">
+        <h4 class="text-gray-500 uppercase text-sm font-bold mb-2">Retention Target</h4>
+        <div class="text-5xl font-extrabold text-empower-dark mb-2">75%</div>
+        <p class="text-gray-700 font-medium">Attendance rate over a 10-week block.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center border-t-8 border-empower-primary">
+        <h4 class="text-gray-500 uppercase text-sm font-bold mb-2">Impact Goal</h4>
+        <div class="text-5xl font-extrabold text-empower-primary mb-2">90%</div>
+        <p class="text-gray-700 font-medium">Report increased feelings of confidence.</p>
+      </div>
+    </div>
+
+    <h2 class="text-2xl font-bold text-gray-800 mb-6">Data Collection Timeline</h2>
+     <div class="flex flex-col md:flex-row justify-between bg-white p-6 rounded-xl shadow-md text-sm">
+        <div class="flex-1 md:border-r border-gray-200 p-4 text-center md:text-left">
+            <span class="font-bold text-empower-dark block mb-1">Month 1 (Baseline)</span>
+            <p>Registration demographics & initial well-being survey.</p>
+        </div>
+        <div class="flex-1 md:border-r border-gray-200 p-4 text-center md:text-left">
+            <span class="font-bold text-empower-dark block mb-1">Month 6 (Mid-Point)</span>
+            <p>Focus groups & attendance review to adjust strategy.</p>
+        </div>
+        <div class="flex-1 p-4 text-center md:text-left">
+            <span class="font-bold text-empower-dark block mb-1">Month 12 (Summative)</span>
+            <p>Final surveys, interviews, and full impact report generation.</p>
+        </div>
+     </div>
+
+
+  </main>
+
+  <footer class="text-center p-6 bg-empower-dark text-white mt-10">
+    <p>&copy; 2025 EmpowerHer Project. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
